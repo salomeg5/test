@@ -3,6 +3,7 @@ import TopicInput from './components/TopicInput';
 import TagsInput from './components/TagsInput';
 import ProductSelector from './components/ProductSelector';
 
+
 const App: React.FC = () => {
    // Estados para almacenar la información ingresada por el usuario
   const [topic, setTopic] = React.useState('');
@@ -41,14 +42,13 @@ return (
         <ProductSelector onProductSelect={handleProductSelect} />
       </div>
 
-      <div className="bg-gray-100 text-center p-4 rounded">
+
         <p className="tex-white text-lg font-roboto mb-2">User Input:</p>
         <p><span className="tex-white font-roboto">Topic:</span> {topic}</p>
         <p><span className="tex-white font-roboto">Tags:</span> {tags.join(', ')}</p>
         <p><span className=" tex-white font-bold">Selected Product:</span> {selectedProduct}</p>
       </div>
     </div>
-  </div>
 );
 };
 
