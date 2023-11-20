@@ -34,3 +34,18 @@ return (
     <div className="mb-4"> {/* Espaciado inferior para los componentes */}
       <TagsInput onChange={handleTagsChange} /> {/* Componente de TagsInput */}
     </div>
+    <div className="mb-4"> {/* Espaciado inferior para los componentes */}
+        <ProductSelector onProductSelect={handleProductSelect} /> {/* Componente de ProductSelector */}
+      </div>
+
+      <div className="bg-gray-100 p-4 rounded"> {/* Cuadro de resumen con fondo gris claro, padding y bordes redondeados */}
+        <p className="text-lg font-semibold mb-2">User Input:</p> {/* Texto grande y negrita */}
+        <p><span className="font-bold">Topic:</span> {topic}</p> {/* Etiqueta 'Topic' en negrita */}
+        <p><span className="font-bold">Tags:</span> {tags.join(', ')}</p> {/* Etiqueta 'Tags' en negrita */}
+        <p><span className="font-bold">Selected Product:</span> {selectedProduct}</p> {/* Etiqueta 'Selected Product' en negrita */}
+      </div>
+    </div>
+  );
+};
+
+export default App;
