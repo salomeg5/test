@@ -8,3 +8,8 @@ const App: React.FC = () => {
   const [topic, setTopic] = React.useState('');
   const [tags, setTags] = React.useState<string[]>([]);
   const [selectedProduct, setSelectedProduct] = React.useState('');
+
+  // Manejar cambios en el input de Topic
+ const handleTopicChange = (value: string) => {
+  setTopic(value);
+};
