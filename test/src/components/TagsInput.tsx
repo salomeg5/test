@@ -31,4 +31,20 @@ const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
           <span key={index} className="bg-gray-200 text-gray-700 py-1 px-2 mr-2 rounded">{tag}</span>
         ))}
       </div>
+       {/* Input de las tags y botón para agregar */}
+       <input
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        value={tagInput}
+        onChange={handleTagInputChange}
+      />
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        onClick={handleAddTag}
+      >
+        Add Tag
+      </button>
+    </div>
+  );
+};
 export default TagsInput;
