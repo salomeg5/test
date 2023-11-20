@@ -26,5 +26,9 @@ const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       {/* Label de las tags */}
       <label className="block text-gray-700 text-sm font-bold mb-2">Tags:</label>
       {/* Mostrar las tags existentes */}
-
+      <div className="mb-2">
+        {tags.map((tag, index) => (
+          <span key={index} className="bg-gray-200 text-gray-700 py-1 px-2 mr-2 rounded">{tag}</span>
+        ))}
+      </div>
 export default TagsInput;
