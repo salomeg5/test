@@ -21,5 +21,10 @@ const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       onChange([...tags, tagInput]);
     }
   };
+  return (
+    <div className="mb-4">
+      {/* Label de las tags */}
+      <label className="block text-gray-700 text-sm font-bold mb-2">Tags:</label>
+      {/* Mostrar las tags existentes */}
 
 export default TagsInput;
