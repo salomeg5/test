@@ -13,6 +13,13 @@ const [tagInput, setTagInput] = useState('');
 const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTagInput(e.target.value);
 };
-
+ // Agregar una nueva tag al array y llamar a la función onChange
+ const handleAddTag = () => {
+    if (tagInput.trim() !== '') {
+      setTags([...tags, tagInput]);
+      setTagInput('');
+      onChange([...tags, tagInput]);
+    }
+  };
 
 export default TagsInput;
