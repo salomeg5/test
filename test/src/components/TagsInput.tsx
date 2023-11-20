@@ -14,37 +14,37 @@ const handleTagInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTagInput(e.target.value);
 };
  // Agregar una nueva tag al array y llamar a la función onChange
- const handleAddTag = () => {
+const handleAddTag = () => {
     if (tagInput.trim() !== '') {
-      setTags([...tags, tagInput]);
-      setTagInput('');
-      onChange([...tags, tagInput]);
+    setTags([...tags, tagInput]);
+    setTagInput('');
+    onChange([...tags, tagInput]);
     }
-  };
-  return (
+};
+return (
     <div className="mb-4">
       {/* Label de las tags */}
-      <label className="block text-gray-700 text-sm font-bold mb-2">Tags:</label>
+    <label className="block text-gray-700 text-sm font-bold mb-2">Tags:</label>
       {/* Mostrar las tags existentes */}
-      <div className="mb-2">
+    <div className="mb-2">
         {tags.map((tag, index) => (
-          <span key={index} className="bg-gray-200 text-gray-700 py-1 px-2 mr-2 rounded">{tag}</span>
+        <span key={index} className="bg-gray-200 text-gray-700 py-1 px-2 mr-2 rounded">{tag}</span>
         ))}
-      </div>
+    </div>
        {/* Input de las tags y botón para agregar */}
-       <input
+    <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
         type="text"
         value={tagInput}
         onChange={handleTagInputChange}
-      />
-      <button
+    />
+    <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={handleAddTag}
-      >
+    >
         Add Tag
-      </button>
+    </button>
     </div>
-  );
+);
 };
 export default TagsInput;
