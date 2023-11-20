@@ -9,5 +9,8 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ onProductSelect }) =>
     useEffect(() => {
         // Llamada a la API para obtener la lista de productos
     }, []);
-    
+    const handleProductSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const selectedProduct = e.target.value;
+        onProductSelect(selectedProduct);
+      };
 export default ProductSelector;
