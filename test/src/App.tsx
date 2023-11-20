@@ -18,3 +18,8 @@ const App: React.FC = () => {
  const handleTagsChange = (tags: string[]) => {
   setTags(tags);
 };
+
+ // Manejar la selección de un producto
+ const handleProductSelect = (product: string) => {
+  setSelectedProduct(product);
+};
