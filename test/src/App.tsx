@@ -42,12 +42,13 @@ return (
         <ProductSelector onProductSelect={handleProductSelect} />
       </div>
 
-
-        <p className="text-white tex-center text-lg font-roboto mb-2">User Input:</p>
-        <p><span className="text-white font-roboto">Topic:</span> {topic}</p>
-        <p><span className="text-white font-roboto">Tags:</span> {tags.join(', ')}</p>
-        <p><span className=" text-white font-bold">Selected Product:</span> {selectedProduct}</p>
-      </div>
+      <div className="bg-gray-100 p-4 rounded">
+        <p className="text-gray-800 tex-center text-lg font-roboto mb-2">User Input:</p>
+        <p><span className="text-gray-800 font-roboto">Topic:</span> {topic}</p>
+        <p><span className="text-gray-800 font-roboto">Tags:</span> {tags.join(', ')}</p>
+        <p><span className="text-gray-800 font-bold">Selected Product:</span> {selectedProduct}</p>
+        </div>
+        </div>
     </div>
 );
 };
