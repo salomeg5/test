@@ -13,3 +13,8 @@ const App: React.FC = () => {
  const handleTopicChange = (value: string) => {
   setTopic(value);
 };
+
+ // Manejar cambios en el input de Tags
+ const handleTagsChange = (tags: string[]) => {
+  setTags(tags);
+};
