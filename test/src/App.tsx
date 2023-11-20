@@ -24,10 +24,10 @@ const App: React.FC = () => {
   setSelectedProduct(product);
 };
 return (
-  <div className="flex items-center justify-center h-screen">
+  <div className="bg-slate-800 flex items-center justify-center h-screen ">
     {/* Envuelve todo en un cuadro gris con bordes */}
-    <div className="bg-gray-200 p-6 rounded-xl shadow-md max-w-md w-full">
-      <h1 className="text-3xl font-bold mb-4 text-center"> Merchant Information </h1>
+    <div className="bg-tranparent bg-transparent border border-gray-500 bg-slate-900 p-6 rounded-xl shadow-md max-w-md w-full">
+      <h1 className="text-3xl text-white font-roboto mb-4 text-center"> Merchant Information </h1>
 
       <div className="mb-4">
         <TopicInput onChange={handleTopicChange} />
@@ -41,11 +41,11 @@ return (
         <ProductSelector onProductSelect={handleProductSelect} />
       </div>
 
-      <div className="bg-gray-100 p-4 rounded">
-        <p className="text-lg font-semibold mb-2">User Input:</p>
-        <p><span className="font-bold">Topic:</span> {topic}</p>
-        <p><span className="font-bold">Tags:</span> {tags.join(', ')}</p>
-        <p><span className="font-bold">Selected Product:</span> {selectedProduct}</p>
+      <div className="bg-gray-100 text-center p-4 rounded">
+        <p className="tex-white text-lg font-roboto mb-2">User Input:</p>
+        <p><span className="tex-white font-roboto">Topic:</span> {topic}</p>
+        <p><span className="tex-white font-roboto">Tags:</span> {tags.join(', ')}</p>
+        <p><span className=" tex-white font-bold">Selected Product:</span> {selectedProduct}</p>
       </div>
     </div>
   </div>
