@@ -43,7 +43,7 @@ return (
       </div>
 
 
-        <p className="tex-white text-lg font-roboto mb-2">User Input:</p>
+        <p className="tex-white tex-center text-lg font-roboto mb-2">User Input:</p>
         <p><span className="tex-white font-roboto">Topic:</span> {topic}</p>
         <p><span className="tex-white font-roboto">Tags:</span> {tags.join(', ')}</p>
         <p><span className=" tex-white font-bold">Selected Product:</span> {selectedProduct}</p>

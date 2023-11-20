@@ -24,16 +24,16 @@ const handleAddTag = () => {
 return (
     <div className="mb-4">
       {/* Label de las tags */}
-    <label className="block text-gray-700 text-sm font-bold mb-2">Tags:</label>
+    <label className="block text-white text-sm font-bold mb-2">Tags:</label>
       {/* Mostrar las tags existentes */}
     <div className="mb-2">
         {tags.map((tag, index) => (
-        <span key={index} className="bg-gray-200 text-gray-700 py-1 px-2 mr-2 rounded">{tag}</span>
+        <span key={index} className="bg-gray-200 text-white py-1 px-2 mr-2 rounded">{tag}</span>
         ))}
     </div>
        {/* Input de las tags y botón para agregar */}
     <input
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        className="tex-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
         type="text"
         value={tagInput}
         onChange={handleTagInputChange}

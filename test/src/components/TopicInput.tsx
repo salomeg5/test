@@ -17,7 +17,7 @@ const TopicInput: React.FC<TopicInputProps> = ({ onChange }) => {
   return (
     <div className="mb-4">
       {/* Label del input */}
-      <label className="block text-gray-700 text-sm font-bold mb-2">Topic:</label>
+      <label className="block text-white text-sm font-bold mb-2">Topic:</label>
       {/* Input del Topic */}
       <input
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
