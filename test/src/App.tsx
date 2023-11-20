@@ -30,11 +30,11 @@ return (
     <div className="bg-tranparent bg-transparent border border-gray-500 bg-slate-900 p-6 rounded-xl shadow-md max-w-md w-full">
       <h1 className="text-3xl text-white font-roboto mb-4 text-center"> Merchant Information </h1>
 
-      <div className="mb-4">
+      <div className="mb-4 text-white">
         <TopicInput onChange={handleTopicChange} />
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4 text-white">
         <TagsInput onChange={handleTagsChange} />
       </div>
 
@@ -43,10 +43,10 @@ return (
       </div>
 
 
-        <p className="tex-white tex-center text-lg font-roboto mb-2">User Input:</p>
-        <p><span className="tex-white font-roboto">Topic:</span> {topic}</p>
-        <p><span className="tex-white font-roboto">Tags:</span> {tags.join(', ')}</p>
-        <p><span className=" tex-white font-bold">Selected Product:</span> {selectedProduct}</p>
+        <p className="text-white tex-center text-lg font-roboto mb-2">User Input:</p>
+        <p><span className="text-white font-roboto">Topic:</span> {topic}</p>
+        <p><span className="text-white font-roboto">Tags:</span> {tags.join(', ')}</p>
+        <p><span className=" text-white font-bold">Selected Product:</span> {selectedProduct}</p>
       </div>
     </div>
 );
