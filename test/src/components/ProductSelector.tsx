@@ -28,7 +28,7 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ onProductSelect }) =>
         };
       
         fetchProducts();
-      }, []);CO
+      }, []);
 
     const handleProductSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedProduct = e.target.value;
