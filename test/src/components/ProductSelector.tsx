@@ -8,7 +8,24 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ onProductSelect }) =>
     const [products, setProducts] = useState<string[]>([]);
     useEffect(() => {
         // Llamada a la API para obtener la lista de productos
-    }, []);
+        const fetchProducts = async () => {
+          try {
+            const response = await fetch('https://api.wizybot.com/products/demo-product-list');
+            if (!response.ok) {
+              throw new Error('Failed to fetch products');
+            }
+    
+            const data = await response.json();
+            // 'data' debería contener la lista de productos
+            setProducts(data);
+          } catch (error) {
+            console.error('Error fetching products:', error);
+          }
+        };
+    
+        // Llamar a la función para obtener productos cuando el componente se monte
+        fetchProducts();
+      }, []);
     const handleProductSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedProduct = e.target.value;
         onProductSelect(selectedProduct);
